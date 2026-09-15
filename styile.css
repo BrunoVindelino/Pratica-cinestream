@@ -15,6 +15,7 @@ header {
 }
 
 .eanave {
+    position: sticky;
     background-color: rgb(168, 67, 67);
     display: flex;
     justify-content: center;
@@ -22,6 +23,7 @@ header {
 }
 
 .menubar{
+    position: sticky;
     display: flex;
     list-style-type: none;
     gap: 100px;
