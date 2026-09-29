@@ -197,3 +197,13 @@ header {
 .btn-detalhes:hover {
   background-color: #b80710;
 }
+
+@media (max-width: 768px) {  
+    .container {
+        flex-direction: column; 
+    }
+    img {
+        width: 100%; 
+        height: auto; 
+    }
+}
