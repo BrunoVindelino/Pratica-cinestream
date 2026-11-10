@@ -97,6 +97,46 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  
+    <button id="abrir-formulario" type="button">Adicionar Filme</button>
+
+    <div id="modal-formulario" class="modal" style="display: none;">
+        <div class="modal-conteudo">
+            <form id="form-filme">
+                <h3>Cadastrar Novo Filme</h3>
+                <p>
+                    <label for="titulo">Título:</label>
+                    <input id="titulo" name="titulo" required>
+                </p>
+                <p>
+                    <label for="capa">URL da imagem:</label>
+                    <input id="capa" name="capa" type="url" required>
+                </p>
+
+                <p>
+                <label for="genero">Gênero:</label>
+                <select id="genero" name="genero" required>
+                    <option value="Ação">Ação</option>
+                    <option value="Terror">Terror</option>
+                    <option value="Animação">Animação</option>
+                    <option value="Família">Família</option>
+                    <option value="Comédia">Comédia</option>
+                </select>
+            </p>
+            
+                <p>
+                    <label for="sinopse">Sinopse:</label>
+                    <textarea id="sinopse" name="sinopse" rows="3" required></textarea>
+                </p>
+                <button type="submit">Salvar Filme</button>
+                <button type="button" id="fechar-formulario">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+ 
 </body>
 
 </html>
